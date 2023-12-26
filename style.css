@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background: url('background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.background h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgb(248, 0, 253);
+    border: 2px solid;
+	border-radius: 5px;
+	border-color: aqua;
+    padding: 10px; 
+}
+
+
+
+.droid {
+    height: 100px;
+    width: 130px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 150;
+}
+
+.rintangan_game {
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 75vh;
+    background-image: url(rintangan.jpg);
+    width: 6vw;
+    border: 5px solid rgb(199, 0, 222);
+}
+
+.message {
+    position: absolute;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.messageStyle {
+    background-color: indigo;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4%;
+    border: 5px solid purple;
+}
+
+.score {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.score_val {
+    color: gold;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1080px) {
+    .message {
+        font-size: 50px;
+        top: 50%;
+        white-space: nowrap;
+    }
+
+    .score {
+        font-size: 8vh;
+    }
+
+    .gird {
+        width: 120px;
+        height: 90px;
+    }
+
+    .rintangan_game {
+        width: 14vw;
+    }
+}
